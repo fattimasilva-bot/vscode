@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: #07111f;
+
+    color: #ffffff;
+}
+
+.caixa-principal {
+    width: 100%;
+    max-width: 850px;
+
+    padding: 45px;
+
+    background-color: #173b66;
+
+    border-radius: 20px;
+
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.5);
+
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 35px;
+
+    font-size: 42px;
+
+    line-height: 1.2;
+
+    color: #ffffff;
+}
+
+.caixa-perguntas {
+    margin-bottom: 30px;
+
+    font-size: 20px;
+
+    line-height: 1.6;
+
+    color: #ffffff;
+}
+
+.caixa-alternativas {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+.botao-alternativa {
+    width: 100%;
+
+    padding: 18px 20px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background-color: #4da3df;
+
+    color: #ffffff;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.botao-alternativa:hover {
+    background-color: #70b9e9;
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.botao-alternativa:nth-child(2) {
+    background-color: #0b2340;
+}
+
+.botao-alternativa:nth-child(2):hover {
+    background-color: #123b66;
+}
+
+.caixaderesultados {
+    display: none;
+
+    margin-top: 30px;
+
+    padding: 30px;
+
+    background-color: #0b2340;
+
+    border-radius: 15px;
+
+    text-align: left;
+}
+
+.texto-resultado {
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    color: #ffffff;
+}
+
+.texto-resultado h2 {
+    margin-bottom: 20px;
+
+    color: #70b9e9;
+
+    text-align: center;
+
+    font-size: 28px;
+}
+
+.texto-resultado p {
+    margin-bottom: 15px;
+}
+
+
+/* Responsividade para celular */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .caixa-principal {
+        padding: 30px 20px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .caixa-perguntas {
+        font-size: 17px;
+    }
+
+    .botao-alternativa {
+        padding: 15px;
+
+        font-size: 16px;
+    }
+
+    .texto-resultado {
+        font-size: 16px;
+    }
+
+    .texto-resultado h2 {
+        font-size: 23px;
+    }
+}
